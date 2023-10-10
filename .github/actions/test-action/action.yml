@@ -3,6 +3,6 @@ description: 'Prints Hello, World!'
 runs:
   using: 'composite'
   steps:
-    - run: bash hello-world.sh
+    - run: bash ${{ github.action_path }}/hello-world.sh
       shell: bash
 
