@@ -1,0 +1,8 @@
+name: 'Hello World Action'
+description: 'Prints Hello, World!'
+runs:
+  using: 'composite'
+  steps:
+    - run: bash hello-world.sh
+      shell: bash
+
