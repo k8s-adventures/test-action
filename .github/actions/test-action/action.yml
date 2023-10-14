@@ -9,6 +9,6 @@ runs:
   steps:
     - run: bash ${{ github.action_path }}/hello-world.sh
       shell: bash
-    - run: echo "ORG_SECRET is" ${{ secrets.ORG_TEST_SECRET }}
+    - run: echo "ORG_SECRET is" $org_test_secret
       shell: bash
 
