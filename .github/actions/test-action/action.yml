@@ -5,6 +5,6 @@ runs:
   steps:
     - run: bash ${{ github.action_path }}/hello-world.sh
       shell: bash
-    - run: echo "ORG_KUBECONFIG is $ORG_TEST_SECRET"
+    - run: echo "ORG_KUBECONFIG is ${{ secrets.ORG_TEST_SECRET }}"
       shell: bash
 
