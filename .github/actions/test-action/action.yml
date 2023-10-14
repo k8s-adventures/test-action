@@ -1,5 +1,9 @@
 name: 'Hello World Action'
 description: 'Prints Hello, World!'
+inputs:
+  org_test_secret:
+    description: 'The organization secret'
+    required: true
 runs:
   using: 'composite'
   steps:
